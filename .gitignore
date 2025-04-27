@@ -1,20 +1,121 @@
-Bin/*
-*.user
-*.sdf
-*.opensdf
-*.suo
-*.pyc
+# Gitignore template for C++/CMake/Falcor projects
+
+# Operating System Files
+########################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+######################
+# Visual Studio
+.vs/
 *.VC.db
-*.VC.opendb
-.vs/*
+*.VC.VC.opendb
+*.sln.dotsettings
+*.suo
+*.user
+*.vcxproj.filters
+*.vcxproj.user
+*.*proj.user
+*.APS
+*.ncb
+*_i.c
+*_p.c
+*_h.h
+
+# VS Code
 .vscode/
-*.pyc
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+
+# CMake Files and Directories
+#############################
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+**/CMakeLists.txt.user # User specific CMake settings
+
+# Build Output Directories (Common Names)
+#########################################
+# Adjust these if your build directory has a different name
+build/
+Build/
+_build/
+_Build/
+out/
+Out/
+bin/
+Bin/
+lib/
+Lib/
+install/
+Install/
+Testing/ # CTest output directory
+
+# Executables and Libraries
+###########################
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.exp
+*.pdb
+*.ilk
+
+# Object Files and Intermediate Build Artifacts
+###############################################
 *.o
-*slang-dump-*
-*.mp4
-packages
-Source/Externals/openvdb/lib/Debug/*.pdb
-Source/RenderPasses/VolumetricReSTIR/Data
-Tools/.packman
-Tests/data
-enc_temp_folder
+*.obj
+*.pch
+*.ipch
+*.i
+*.s
+*.map
+*.tlog
+*.ninja*
+*.gch
+
+# Log Files
+###########
+*.log
+
+# Falcor Specific (Potential - adjust as needed)
+###############################################
+# Falcor often downloads large media files/scenes separately.
+# If you have copied large example assets into your repo that you don't want to track,
+# add their specific paths or patterns here.
+# Example:
+# Media/SomeLargeScene/
+# Data/ExampleTextures/
+
+# Dependency Management (if fetched automatically)
+#################################################
+# If you use tools like vcpkg, Conan, or git submodules stored OUTSIDE the repo,
+# you might have local build folders for them.
+# If dependencies are downloaded/built into specific directories within your project
+# during the build process and shouldn't be tracked, add them here.
+# Example:
+# external/
+# dependencies/
+# vendor/
+
+# Crash Dumps
+#############
+*.dmp
+
+# Python Cache
+##############
+__pycache__/
+*.pyc
+*.pyo
