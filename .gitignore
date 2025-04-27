@@ -11,6 +11,29 @@ Desktop.ini
 ######################
 # Visual Studio
 .vs/
+<<<<<<< Updated upstream
+=======
+*.VC.db
+*.VC.VC.opendb
+*.sln.dotsettings
+*.suo
+*.user
+*.vcxproj.filters
+*.vcxproj.user
+*.*proj.user
+*.APS
+*.ncb
+*_i.c
+*_p.c
+*_h.h
+
+Bin/*
+*.user
+*.sdf
+*.opensdf
+*.suo
+*.pyc
+>>>>>>> Stashed changes
 *.VC.db
 *.VC.VC.opendb
 *.sln.dotsettings
@@ -76,6 +99,69 @@ Testing/ # CTest output directory
 # Object Files and Intermediate Build Artifacts
 ###############################################
 *.o
+<<<<<<< Updated upstream
+=======
+*slang-dump-*
+*.mp4
+packages
+Source/Externals/openvdb/lib/Debug/*.pdb
+Source/RenderPasses/VolumetricReSTIR/Data
+Tools/.packman
+Tests/data
+enc_temp_folder
+
+# VS Code
+.vscode/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+
+# CMake Files and Directories
+#############################
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+**/CMakeLists.txt.user # User specific CMake settings
+
+# Build Output Directories (Common Names)
+#########################################
+# Adjust these if your build directory has a different name
+build/
+Build/
+_build/
+_Build/
+out/
+Out/
+bin/
+Bin/
+lib/
+Lib/
+install/
+Install/
+Testing/ # CTest output directory
+
+# Executables and Libraries
+###########################
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.exp
+*.pdb
+*.ilk
+
+# Object Files and Intermediate Build Artifacts
+###############################################
+*.o
+>>>>>>> Stashed changes
 *.obj
 *.pch
 *.ipch
@@ -110,6 +196,11 @@ Testing/ # CTest output directory
 # dependencies/
 # vendor/
 
+<<<<<<< Updated upstream
+=======
+Source/Externals/
+
+>>>>>>> Stashed changes
 # Crash Dumps
 #############
 *.dmp
